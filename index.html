@@ -329,6 +329,61 @@
     <p>© 2026 JN Référencement. Tous droits réservés.</p>
 </footer>
 
+<!-- ASSISTANT VIRTUEL JN -->
+
+<div class="chatbot">
+
+    <button class="chatbot-toggle" id="chatbot-toggle"
+        aria-label="Ouvrir l'assistant JN">
+        <span>💬</span>
+    </button>
+
+    <div class="chatbot-window" id="chatbot-window">
+
+        <div class="chatbot-header">
+            <div>
+                <h3>Assistant JN</h3>
+                <p>Votre assistant digital</p>
+            </div>
+
+            <button id="chatbot-close" aria-label="Fermer">
+                ×
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="bot-message">
+                Bonjour et bienvenue chez JN Référencement !
+                Comment pouvons-nous vous aider ?
+            </div>
+        </div>
+
+        <div class="chatbot-questions">
+            <button data-question="services">Vos services</button>
+            <button data-question="devis">Demander un devis</button>
+            <button data-question="seo">Le référencement SEO</button>
+            <button data-question="contact">Vous contacter</button>
+        </div>
+
+        <form class="chatbot-input-area" id="chatbot-form">
+
+            <input
+                type="text"
+                id="chatbot-input"
+                placeholder="Écrivez votre question..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- FIN ASSISTANT VIRTUEL -->
 <script src="script.js"></script>
 
 </body>

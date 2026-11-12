@@ -31,7 +31,7 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="realisations.html">Réalisations</a></li>
-            <li><a href="agence.html">Agence</a></li>
+            <li><a href="agence.html">Notre agence</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -51,7 +51,7 @@
             numérique grâce à des solutions web adaptées à leurs objectifs.
         </p>
 
-        <div class="service-container">
+        <div class="service-grid">
 
             <article class="service-card">
                 <h2>Création de sites web</h2>
@@ -60,7 +60,7 @@
                     adaptés aux ordinateurs, tablettes et téléphones.
                 </p>
                 <a href="contact.html" class="main-button">
-                    Découvrir ce service
+                    Discuter de ce service
                 </a>
             </article>
 
@@ -71,7 +71,7 @@
                     site pour améliorer sa visibilité sur les moteurs de recherche.
                 </p>
                 <a href="contact.html" class="main-button">
-                    Découvrir ce service
+                    Discuter de ce service
                 </a>
             </article>
 
@@ -82,7 +82,7 @@
                     pour renforcer sa vitesse, ses performances et son expérience utilisateur.
                 </p>
                 <a href="contact.html" class="main-button">
-                    Découvrir ce service
+                    Discuter de ce service
                 </a>
             </article>
 
@@ -96,6 +96,61 @@
     <p>© 2026 JN Référencement. Tous droits réservés.</p>
 </footer>
 
+<!-- ASSISTANT VIRTUEL JN -->
+
+<div class="chatbot">
+
+    <button class="chatbot-toggle" id="chatbot-toggle"
+        aria-label="Ouvrir l'assistant JN">
+        <span>💬</span>
+    </button>
+
+    <div class="chatbot-window" id="chatbot-window">
+
+        <div class="chatbot-header">
+            <div>
+                <h3>Assistant JN</h3>
+                <p>Votre assistant digital</p>
+            </div>
+
+            <button id="chatbot-close" aria-label="Fermer">
+                ×
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="bot-message">
+                Bonjour et bienvenue chez JN Référencement !
+                Comment pouvons-nous vous aider ?
+            </div>
+        </div>
+
+        <div class="chatbot-questions">
+            <button data-question="services">Vos services</button>
+            <button data-question="devis">Demander un devis</button>
+            <button data-question="seo">Le référencement SEO</button>
+            <button data-question="contact">Vous contacter</button>
+        </div>
+
+        <form class="chatbot-input-area" id="chatbot-form">
+
+            <input
+                type="text"
+                id="chatbot-input"
+                placeholder="Écrivez votre question..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- FIN ASSISTANT VIRTUEL -->
 <script src="script.js"></script>
 
 </body>
