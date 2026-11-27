@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jn-referencement.vercel.app/sitemap.xml
