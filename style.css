@@ -1712,3 +1712,382 @@ footer {
     height: auto;
     display: block;
 }
+
+/* =========================================
+   NOUVEAU DESIGN — PAGE SERVICES
+========================================= */
+
+.services-page main {
+    background: #ffffff;
+}
+
+.services-page main > .services {
+    padding: 85px max(7%, calc((100% - 1180px) / 2));
+    text-align: left;
+    background: #ffffff;
+}
+
+/* Introduction */
+
+.services-page main > .services:first-child {
+    padding-top: 95px;
+    padding-bottom: 90px;
+    text-align: center;
+    background:
+        radial-gradient(circle at 90% 10%, rgba(233,162,59,0.10), transparent 30%),
+        #f7f8fb;
+}
+
+.services-page .services:first-child h1 {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    color: var(--navy);
+    font-size: clamp(36px, 5vw, 52px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.services-page .services:first-child > p:not(.subtitle) {
+    max-width: 780px;
+    margin: 0 auto 18px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* Titres et textes des sections */
+
+.services-page .services > h2 {
+    max-width: 850px;
+    margin-bottom: 22px;
+    color: var(--navy);
+    font-size: clamp(27px, 3.5vw, 38px);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+.services-page .services > h3 {
+    margin-top: 38px;
+    margin-bottom: 18px;
+    color: var(--navy);
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.services-page .services > p:not(.subtitle) {
+    max-width: 900px;
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Alternance des arrière-plans */
+
+.services-page main > .services:nth-child(2),
+.services-page main > .services:nth-child(4),
+.services-page main > .services:nth-child(6) {
+    background: #f7f8fb;
+}
+
+.services-page main > .services:nth-child(3),
+.services-page main > .services:nth-child(5) {
+    background: #ffffff;
+}
+
+/* Grille des prestations */
+
+.services-page .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 38px;
+    text-align: left;
+}
+
+.services-page .service-card {
+    min-width: 0;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e9f0;
+    border-radius: 14px;
+    box-shadow: 0 7px 24px rgba(20, 33, 61, 0.045);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.services-page .service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--orange);
+    box-shadow: 0 14px 30px rgba(20, 33, 61, 0.09);
+}
+
+.services-page .service-card h2,
+.services-page .service-card h3 {
+    margin: 0 0 14px;
+    color: var(--navy);
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.services-page .service-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Boutons */
+
+.services-page .main-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 13px 21px;
+    border-radius: 7px;
+    background: var(--orange);
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.services-page .main-button:hover {
+    background: var(--navy);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.services-page .service-card a.main-button {
+    margin-top: 22px;
+}
+
+/* Listes */
+
+.services-page .services > ul {
+    max-width: 900px;
+    margin: 25px 0 30px;
+    padding: 25px 30px 25px 50px;
+    background: #ffffff;
+    border: 1px solid #e8ebf2;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.services-page .services > ul li {
+    padding: 7px 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.services-page .services > ul li::marker {
+    color: var(--orange);
+}
+
+/* Méthode de travail */
+
+.services-page main > .services:nth-child(5) .service-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.services-page main > .services:nth-child(5) .service-card {
+    border-top: 3px solid var(--orange);
+}
+
+/* FAQ */
+
+.services-page main > .services:nth-child(6) .service-card {
+    max-width: 900px;
+    margin: 18px auto;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.services-page main > .services:nth-child(6) .service-card:hover {
+    transform: none;
+    border-color: var(--orange);
+    box-shadow: 0 5px 18px rgba(20, 33, 61, 0.05);
+}
+
+.services-page main > .services:nth-child(6) .service-card h3 {
+    position: relative;
+    padding-left: 25px;
+}
+
+.services-page main > .services:nth-child(6) .service-card h3::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    color: var(--orange);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+/* Appel à l'action final */
+
+.services-page main > .services:last-child {
+    text-align: center;
+    background: var(--navy);
+}
+
+.services-page main > .services:last-child .subtitle {
+    color: var(--orange);
+}
+
+.services-page main > .services:last-child h2 {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: #ffffff;
+}
+
+.services-page main > .services:last-child > p:not(.subtitle) {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #d8dfeb;
+}
+
+.services-page main > .services:last-child .main-button {
+    margin-top: 5px;
+}
+
+/* Espacement des ancres */
+
+.services-page #creation-site,
+.services-page #referencement-seo,
+.services-page #optimisation-web {
+    scroll-margin-top: 100px;
+}
+
+/* Tablettes */
+
+@media (max-width: 900px) {
+    .services-page .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .services-page main > .services:nth-child(5) .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .services-page main > .services {
+        padding: 70px 6%;
+    }
+}
+
+/* Téléphones */
+
+@media (max-width: 600px) {
+    .services-page main > .services {
+        padding: 60px 6%;
+    }
+
+    .services-page main > .services:first-child {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .services-page .services:first-child h1 {
+        font-size: 34px;
+        letter-spacing: -0.8px;
+    }
+
+    .services-page .services > h2 {
+        font-size: 27px;
+    }
+
+    .services-page .services > h3 {
+        font-size: 19px;
+    }
+
+    .services-page .service-grid,
+    .services-page main > .services:nth-child(5) .service-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .services-page .service-card {
+        padding: 25px 22px;
+    }
+
+    .services-page .services > ul {
+        padding: 20px 20px 20px 38px;
+    }
+
+    .services-page main > .services:nth-child(6) .service-card {
+        padding: 22px 18px;
+    }
+}
+/* AJUSTEMENTS — PAGE SERVICES */
+
+.services-page main > .services {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.services-page .services h1,
+.services-page .services h2,
+.services-page .services h3 {
+    color: #14213d;
+    text-align: center;
+}
+
+.services-page .services p,
+.services-page .services li {
+    color: #263247;
+}
+
+.services-page .services p {
+    line-height: 1.7;
+}
+
+.services-page .services > p,
+.services-page .services > h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-page .service-grid {
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.services-page .service-card {
+    text-align: center;
+    padding: 25px 22px;
+}
+
+.services-page .service-card p {
+    color: #344054;
+}
+
+.services-page .service-card ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.services-page .services .main-button {
+    margin-top: 15px;
+}
+
+.services-page .services:last-child {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .services-page main > .services {
+        padding: 45px 6%;
+    }
+
+    .services-page .service-grid {
+        gap: 14px;
+    }
+}
+.services-page .services p.subtitle {
+    color: var(--orange);
+    font-weight: 700;
+}
